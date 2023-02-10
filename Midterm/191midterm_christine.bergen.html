@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>ITAS 191 Midterm - Rabbits of VIU</title>
+
+    <style>
+			/*
+				BASIC EXAMPLE STYLING
+			*/
+
+      *,
+      *:before,
+      *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #2980b9;
+        color: #fff;
+        font-family: Helvetica;
+        margin: 0;
+      }
+
+      header,
+      nav,
+      section {
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        margin-bottom: 10px;
+        border-radius: 3px;
+      }
+
+      header {
+        padding: 20px 0;
+      }
+
+      nav,
+      section {
+        padding: 100px 0;
+			}
+
+      /*
+				RESPONSIVE LAYOUT CSS
+			*/
+      .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      @media screen and (min-width: 800px) {
+        .wrapper {
+          max-width: 90%;
+        }
+
+        header {
+          width: 100%;
+        }
+
+        nav,
+        section {
+          float: left;
+        }
+
+        nav {
+          width: 20.83333%;
+          margin-right: 1.041667%;
+        }
+
+        section {
+          width: 78.125%;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        .wrapper {
+          max-width: 90%;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /*
+	    	ADD YOUR OWN CSS BELOW THIS COMMENT
+			*/
+      h2 {
+        text-align: center;
+        text-shadow: 2px 2px black;
+      }
+      h3 { /* I have added some CSS styling to the h3 headers - 
+        underlining, changed the header colour, and added a text shadow*/
+        font-size: 200%;
+        text-decoration: underline;
+        color: goldenrod;
+        text-shadow: 2px 2px black;
+      }
+      
+      #map a {
+        display: block;
+        
+        position: absolute;
+      }
+      a#zen { /* I had a lot of trouble positioning 
+        these boxes. I wasn't able to change the map image to a 
+        background image in the time allowed, so the link boxes 
+        will probably not be in the right places depending on the 
+        screen this is viewed on*/
+        width: 38px;
+        height: 38px;
+        left: 833px;
+        top: 390px;
+        border: 1px solid blue
+      }
+      a#gym {
+        width: 34px;
+        height: 34px;
+        left: 947px;
+        top: 700px;
+        border: 1px solid red;
+      }
+      a#wild {
+        width: 187px;
+        height: 182px;
+        left: 1215px;
+        top: 552px;
+        border: 1px solid orange
+      }
+
+      table, th, td {
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px 10px 10px 10px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: white;
+      }
+      form {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 15px;
+        border-style:solid;
+        border-color: white;
+        border-width: 4px
+
+      }
+      label, input, select {
+       
+        display: inline-block;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Rabbits of VIU</h1>
+      </header>
+      <div id="map">
+        <a href="#zen" id="zen"></a>
+        <a href="#gym" id="gym"></a>
+        <a href="#wild" id="wild"></a>
+      </div>
+      <nav>
+        <ol>
+          <li><a href="#zen">Zen Rabbits</a></li>
+          <li><a href="#gym">Gym Rabbits</a></li>
+          <li><a href="#wild">The Wilds</a></li>
+        </ol>
+      </nav>
+
+      <section id="content"> 
+        <div id="map">
+          <img src="https://dev.itas.ca/~brandon.brown/ITAS191/midterm/VIU_RabbitsMap.png"
+          alt="A map of the Vancouver Island University campus in Nanaimo BC" 
+          />
+        </div>
+
+        <div id="descriptions">
+          <h2>Descriptions</h2>
+          <div id="zen">
+            <h3>Zen Rabbits</h3>
+            <a href="https://dev.itas.ca/~christine.bergen/ITAS191/Midterm/zen.jpg">
+              <img src="https://dev.itas.ca/~christine.bergen/ITAS191/Midterm/zen_small.jpg"
+              alt="A picture of a rabbit drinking a cup of tea"
+              width="200"
+              height="150"
+              />
+            </a>
+            Zen Rabbits are the calmest of all the VIU rabbits. You will often find them basking in 
+            the sunshine in the Japanese garden. They love green tea and will likely approach you 
+            and ask for a sip if you walk by with a mug of it.
+          </div>
+
+          <div id="gym">
+            <h3>Gym Rabbits</h3>
+            <a href="https://dev.itas.ca/~christine.bergen/ITAS191/Midterm/gym.jpg">
+              <img src="https://dev.itas.ca/~christine.bergen/ITAS191/Midterm/gym_small.jpg"
+              alt="A picture of a rabbit running on a treadmill"
+              width="200"
+              height="150"
+              />
+            </a>
+            Gym rabbits hang out by the Gym (building 190). They spend much of their time running up 
+            and down the stairs in front of the library in search of the elusive carrot on a string.
+          </div>
+
+          <div id="wild">
+            <h3>The Wilds</h3>
+            <a href="https://dev.itas.ca/~christine.bergen/ITAS191/Midterm/wild.jpg">
+              <img src="https://dev.itas.ca/~christine.bergen/ITAS191/Midterm/wild_small.jpg"
+              alt="A picture of a rabbit sleeping"
+              width="200"
+              height="150"
+              />
+            </a>
+            Often found in the empty lot near 4th street, the wilds spend much of their time at the 
+            campus pub. The wilds are usually not spotted until late morning or early afternoon. 
+            They spent most of their time partying and not paying attention in class, and often sleep until noon. 
+          </div>
+        </div>
+
+        <div id="topFiveRabbits">
+          <h2>Top Five Rabbits</h2>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Weight</th>
+              <th>Colour</th>
+              <th>Home Zone</th>
+              <th>Special Power</th>
+            </tr>
+            <tr>
+              <td>Flower</td>
+              <td>2kg</td>
+              <td>Grey</td>
+              <td>Japanese Garden</td>
+              <td>Eating grass</td>
+            </tr>
+            <tr>
+              <td>Macho</td>
+              <td>2.5kg</td>
+              <td>Black</td>
+              <td>Gym</td>
+              <td>Lifting heavy things</td>
+            </tr>
+            <tr>
+              <td>Freddie</td>
+              <td>3kg</td>
+              <td>Grey and white</td>
+              <td>the Pub</td>
+              <td>Sleeping</td>
+            </tr>
+            <tr> 
+              <td>Blondie</td>
+              <td>2kg</td>
+              <td>Yellow and White</td>
+              <td>Outside Starbucks</td>
+              <td>Giving energy to tired students</td> 
+            </tr>
+            <tr>
+              <td>Sylvia</td>
+              <td>2.3 kg</td>
+              <td>Brown and White</td>
+              <td>The parking lot</td>
+              <td>Preventing students from getting parking tickets</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="form">
+          <h2>Report a Rabbit</h2>
+          <form
+          method="post"
+          action="https://dev.itas.ca/~brandon.brown/processForm.php">
+          <p>
+            
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div>
+              <label for="weight">Weight</label>
+              <input type="text" id="weight" name="weight" />
+            </div>
+            <div>
+              <label for="color">Color</label>
+              <input type="text" id="color" name="color" />
+            </div>
+            <div>
+              <label for="home">Home Zone</label>
+              
+              <select>
+                <option>Japanese Garden</option>
+                <option>Gym</option>
+                <option>Empty lot on 4th street</option>
+                <option>Other</option>
+              </select>
+              </div>
+              <div>
+                <label for="power">Special Power</label>
+                <input type="text" id="power" name="power" />
+              </div>
+              <div>
+            <button type="submit">Submit</button>
+            </div>
+            </div>
+          </p>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

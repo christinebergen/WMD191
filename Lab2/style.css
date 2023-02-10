@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(190, 29, 253, 1) 12%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  /**linear gradient background created on https://cssgradient.io/  */
+}
+
+p {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid grey;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.placename {
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+}
+.restaurant {
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+}
+h1 {
+  text-shadow: 1px 1px 1px black;
+  font-size: 40px;
+}
+
+#map {
+  background-image: url(images/nanaimo-map.png);
+  width: 768px;
+  height: 704px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#map a {
+  display: block;
+  border: 5px solid #0d0e0d;
+  position: absolute;
+}
+a#descansobay {
+  width: 40px;
+  height: 40px;
+  left: 659px;
+  top: 290px;
+}
+a#ammonitefalls {
+  width: 40px;
+  height: 40px;
+  left: 88px;
+  top: 257px;
+}
+a#neckpoint {
+  width: 40px;
+  height: 40px;
+  left: 393px;
+  top: 117px;
+}
+a#crowgate {
+  width: 40px;
+  height: 40px;
+  left: 695px;
+  top: 625px;
+}
+a#dripcoffee {
+  width: 40px;
+  height: 40px;
+  left: 381px;
+  top: 225px;
+}
+h2 {
+  font-size: 40px;
+  text-shadow: 1px 1px 1px black;
+}
+h3 {
+  font-size: 26px;
+  text-decoration: underline;
+  padding: 15px;
+}
+img {
+  float: left;
+  padding: 10px;
+}

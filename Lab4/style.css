@@ -1,0 +1,103 @@
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
+
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: tomato;
+  }
+  
+  .footer {
+    background: lightgreen;
+  }
+  .main {
+    background: deepskyblue;
+   
+  }
+  ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    color: #FFEBD6;
+    font-size: 20px;
+  }
+
+  .spice1 {
+    background: tomato;
+    margin: 10px 0px 10px 0px;
+    padding: 30px 20px 10px 20px;
+    height: 50px;
+    width: 70px;   
+  }
+
+  .spice2 {
+    background: tomato;
+    margin: 10px 0px 10px 0px;
+    padding: 30px 20px 10px 20px;
+    height: 50px;
+    width: 70px;   
+  }
+
+  .spice3 {
+    background: tomato;
+    margin: 10px 0px 10px 0px;
+    padding: 30px 20px 10px 20px;
+    height: 50px;
+    width: 70px;   
+  }
+
+  .spice4 {
+    background: tomato;
+    margin: 10px 0px 10px 0px;
+    padding: 30px 20px 10px 20px;
+    height: 50px;
+    width: 70px;   
+  }
+
+  .spice5 {
+    background: tomato;
+    margin: 10px 0px 10px 0px;
+    padding: 30px 20px 10px 20px;
+    height: 50px;
+    width: 70px;   
+  }
+
+  .spice6 {
+    background: tomato;
+    margin: 10px 0px 10px 0px;
+    padding: 25px 20px 25px 20px;
+    height: 50px;
+    width: 70px;   
+  }
+
+  .aside-1 {
+    background: gold;
+  }
+  
+  .aside-2 {
+    background: hotpink;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  } 
+  
+  body {
+    padding: 2em; 
+  }
+  

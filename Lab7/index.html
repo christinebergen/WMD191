@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christine's Blog</title>
+    <style>
+      html {
+        /* changes the default 16px font size to 10px for easy math */
+        /* 1rem = 10px */
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      h1 {
+        font-size: 6rem;
+        background-color: rgb(100, 4, 100);
+        color: blanchedalmond;
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      body {
+        background-color: rgb(248, 205, 248);
+        font-size: 1.6rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .nav-link {
+        color: blanchedalmond;
+        text-decoration: none;
+      }
+
+      .nav-item {
+        background-color: rgb(100, 4, 100);
+        color: blanchedalmond;
+        font-size: 2rem;
+        padding: 2rem 5rem 2rem 5rem;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        text-align: center;
+      }
+
+      .nav-item:hover {
+        background-color: rgb(37, 3, 35);
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
+
+      .item {
+        background-color: rgb(100, 4, 100);
+        padding: 2rem 2rem 5rem 2rem;
+        color: blanchedalmond;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        color: aqua;
+      }
+
+      img {
+        border-radius: 50%;
+        margin-left: 5rem;
+        align-self: center;
+        height:150rem;
+        
+      }
+
+      @media screen and (max-width: 767px) {
+        .main-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Christine's Blog</h1>
+    </header>
+    <div class="main-container">
+      <div class="wrapper">
+        <aside>
+          <div class="cleo">
+            <a href="cleo.jpg">
+              <img
+                src="cleo.jpg"
+                alt="A picture of a black cat's face."
+                width="300"
+                height="300"
+              />
+            </a>
+          </div>
+
+          <div class="nav">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="anotherpage.html">Another Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="somethingelse.html">Something Else</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="container">
+        <div class="item">
+          <h2>Travel</h2>
+          I am passionate about travel and love exploring new places. I have
+          visited 14 different countries (15 if you count Vatican City as it's
+          own country) and can't wait to add more to that list. My favourites
+          include Scotland, Finland, and Estonia. Fun fact: I have visited the
+          most remote inhabited island in the UK, and one of my
+          great-great-grandfathers was actually born there!
+        </div>
+        
+        <div class="item">
+          <h2>Music</h2>
+          Listening to mostly 90's pop and alternative music for most of my
+          life, my musical taste has rapidly evolved in the past few years. This
+          is partly thanks to my Husband, Aaron, who has introduced me to the
+          realm of Canadian Folk music (particularly Stan Rogers), Celtic Punk,
+          and the much more ear-pleasing traditional Irish music known as "Irish
+          Trad". I was inspired by my Husband's ability to play traditional
+          irish music on various instruments and with thanks to my background
+          learning piano as a child and playing in highschool band, have been
+          working on learning to play the Anglo Concertina. Playing the
+          concertina in a traditional music session in Ireland is defintiely on
+          my bucket list.
+        </div>
+
+        <div class="item">
+          <h2>Board Games</h2>
+          I have found learning new board games to be a fun hobby. Recently we
+          played a collaborative campaign-style game with some friends. It was a
+          unique experience playing a game that requires players to work
+          together towards a common goal rather than competing against each
+          other. The campaign-style was also very interesting, as this
+          particular game was intended to be played over many hours and multiple
+          sessions. After each session, all of the cards and game pieces were
+          packed up into the box so that we were able to easily pick up where we
+          left off when we were able to get together for another session to
+          play.
+        </div>
+
+        <div class="item">
+          <h2>I never tought I'd be a cat person...</h2>
+          But I'm a cat person. Don't get me wrong, I love a good rent-a-dog
+          situation where I can borrow a dog and take it out for some fun hikes,
+          and then return it to it's owners. Our current cat was a rescue from
+          <a href="http://catnapsociety.com">CatNap Society</a> in Nanaimo. She
+          was a young mom who had a litter of kittens, and had been surrendered
+          to CatNap when her owner could no longer care for her and her kittens.
+          Her kittens were all adopted before she was, and I first went to meet
+          her after her picture and story were shared on the CatNap society
+          facebook page. She had been available for adoption for about 3 months,
+          and had actually been adopted and returned once as the family that
+          adopted her quickly learned she wasn't in favour of being in a house
+          with small children. She is a very outgoing, quirky, affectionate,
+          with a spicy personality and she fits into our household fabulously.
+          She makes sure to give our visitors a very warm welcome and may even
+          swat at her favourites!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

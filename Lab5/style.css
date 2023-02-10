@@ -1,0 +1,39 @@
+form {
+    padding: 20px;
+    background-color: #AED9E5;
+    font-family: Arial, sans-serif;
+    width: 50%;
+  }
+  
+  .star {
+    color: red;
+    font-size: 20px;
+  }
+
+  label {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    width: 250px;
+    float: left;
+    clear: left;
+    text-align: right;
+  }
+  
+  input, select {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    display: inline-block;  
+  }
+  
+  button {
+    margin-left: 200px;
+  }
+  

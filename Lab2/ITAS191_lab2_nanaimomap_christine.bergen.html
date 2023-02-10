@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Favourite places in Nanaimo - Christine Bergen</title>
+    <style>
+      /**
+       * Try not to mess with this part unless you're familiar with box-sizing.
+       * We will cover these topics in a future class. You can modify this section
+       * if you want to, but feel free to skip to the next part below.
+       */
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      /* Play around with the CSS below here and add your own personal style! */
+      body {
+        color: #5a294b;
+      }
+
+      #map {
+        float: left;
+        height: 704px;
+      }
+      footer {
+        clear: both;
+      }
+      #legend {
+        padding: 10px 15px;
+        float: left;
+        font-size: 24px;
+      }
+      #details section {
+        background: linear-gradient(
+          343deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(247, 173, 138, 1) 34%,
+          rgba(252, 188, 98, 1) 55%
+        );
+        margin-bottom: 50px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        overflow: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /**linear gradient background created on https://cssgradient.io/  */
+      }
+    </style>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: #5a294b">Christine's favourite places in Nanaimo</h1>
+    </header>
+
+    <main>
+      <div id="map">
+        <a href="#descanso_bay" id="descansobay"></a>
+        <a href="#ammonite_falls" id="ammonitefalls"></a>
+        <a href="#neck_point" id="neckpoint"></a>
+        <a href="#crow_gate" id="crowgate"></a>
+        <a href="#drip_coffee" id="dripcoffee"></a>
+      </div>
+
+      <div id="legend">
+        <h2>Legend</h2>
+        <ol type="A">
+          <li><a href="#descanso_bay">Descanso Bay Regional Park</a></li>
+          <li><a href="#ammonite_falls">Ammonite Falls</a></li>
+          <li><a href="#neck_point">Neck Point</a></li>
+          <li><a href="#crow_gate">Crow and Gate Pub</a></li>
+          <li><a href="#drip_coffee">Drip Coffee</a></li>
+        </ol>
+      </div>
+    </main>
+    <footer>
+      <div id="details">
+        <h2
+          style="
+            color: rgb(5, 0, 4);
+            background-color: rgba(252, 188, 98, 1);
+            font-family: helvetica;
+            padding: 30px;
+          "
+        >
+          Details about Places:
+        </h2>
+        <section>
+          <h3 id="descanso_bay">Descanso Bay Regional Park</h3>
+          <a href="images/descanso.jpg">
+            <img
+              src="images/descansosmall.jpg"
+              alt="A picture of part of Descanso Bay, Gabriola Island. The sky is 
+              blue with whispy white clouds in the top corners of the picture. 
+              There are evergreen trees on the left and right shores, with rocky 
+              sandstone shore on the right foreground of the bay, and clear, 
+              calm ocean in the middle"
+              width="200"
+              height="150"
+            />
+          </a>
+          <p>
+            Gabriola Island, just a short 20 minute ferry ride from Nanaimo
+            harbour is home to one of my favourite spots:
+            <span class="placename">Descanso Bay Regional Park</span>.
+            <span class="placename">Descanso Bay Regional Park</span> is
+            situated just slightly north of the ferry terminal on Gabriola
+            Island. <span class="placename">Descanso Bay</span> offers a
+            year-round use campground, as well as a day use area that is popular
+            for kayaking, paddle boarding, swimming, and beach combing on the
+            sandstone shores. Various types of whales are often sighted passing
+            by this location.
+          </p>
+        </section>
+        <section>
+          <h3 id="ammonite_falls">Ammonite Falls</h3>
+          <a href="images/ammonite.jpg">
+            <img
+              src="images/ammonitesmall.jpg"
+              alt="A picture of Ammonite falls, an approxiamtely 40 foot high waterfall 
+              near Nanaimo BC"
+              width="150"
+              height="200"
+            />
+          </a>
+          <p>
+            <span class="placename">Ammonite falls</span> is located on the
+            north west side of Mount Benson, and is an impressive waterfall.
+            There are various hiking trails that lead to
+            <span class="placename">Ammonite falls</span>, but by far my
+            favourite is the access off of Galloway Gulch. Round trip to the
+            falls and back takes a little over an hour and is a great spot to
+            take your dog off-leash. As always on Vancouver Island, extra care
+            should be taken to be bear and cougar aware, as this is definitely
+            their territory.
+          </p>
+        </section>
+        <section>
+          <h3 id="neck_point">Neck Point Park</h3>
+          <a href="images/neckpoint.jpg">
+            <img
+              src="images/neckpointsmall.jpg"
+              alt="a picture of one of the beaches at Neck Point Park, Nanaimo BC 
+              during a storm. The sky is cloudy and grey with the sun trying to peek 
+              through with middle of the clouds leaving a little bit of blue sky 
+              visible. There are frothy white waves crashing against the shore"
+              width="200"
+              height="113"
+            />
+          </a>
+          <p>
+            <span class="placename">Neck point</span> is a city park located
+            along Hammond Bay road.
+            <span class="placename">Neck point</span> offers great hiking
+            trails, and beautiful coastal and mountanin views. During the spring
+            Herring Spawning every March,
+            <span class="placename">Neck Point</span> is a great spot to watch
+            the herring fishery boats and all of the sea lions and sea birds who
+            also show up for a tasty treat.
+          </p>
+        </section>
+        <section>
+          <h3 id="crow_gate">Crow and Gate Pub</h3>
+          <a href="images/breadpudding.jpg">
+            <img
+              src="images/breadpuddingsmall.jpg"
+              alt="A picture of a bowl of bread pudding dessert with brandy custard sauce 
+              and whipped cream at the Crow and Gate pub"
+              width="150"
+              height="200"
+            />
+          </a>
+          <p>
+            <span class="restaurant">The Crow and Gate Pub</span> is located in
+            an area of south Nanaimo known as Yellow Point.
+            <span class="restaurant">The Crow and Gate</span> has long been a
+            fixture of the food culture in Nanaimo, bringing an authentic
+            British Pub experience to the West Coast. Their pub fare is not
+            unlike what you would find in a traditional pub in England, and they
+            always have a great selection of UK beers on tap. By far the best
+            thing about <span class="restaurant">The Crow and Gate pub</span>,
+            is the Bread Pudding dessert which is only available in the winter
+            months. <span class="restaurant">The Crow and Gate</span> also has
+            an impressive garden/patio area that is open in the summer months.
+          </p>
+        </section>
+        <section>
+          <h3 id="drip_coffee">Drip Coffee</h3>
+          <a href="images/drip.jpeg">
+            <img
+              src="images/dripsmall.jpg"
+              alt="A picture of a glass of beer sitting on a table in the foreground, 
+              and looking out the window of Drip Coffee towards Departure Bay in Nanaimo, BC"
+              width="150"
+              height="200"
+            />
+          </a>
+          <p>
+            <span class="restaurant">Drip Coffee</span> located across from
+            Departure Bay Beach has become one of my favourite spots to unwind.
+            With the breezy sea air on their patio, it's the perfect spot to
+            meet a friend for coffee or a drink. Their avocado toast is second
+            to none, and they also serve Island Farms ice cream for those hot
+            summer days. Grab a coffee and head across the street to the beach
+            and you can enjoy watching ferries coming and going and float planes
+            taking off and landing.
+          </p>
+        </section>
+      </div>
+    </footer>
+    <footer>&copy;Christine Bergen 2022</footer>
+  </body>
+</html>

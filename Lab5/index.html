@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bathtub race sign-up sheet</title>
+    <link rel="stylesheet" href="style.css" />
+  <header>
+    <style>
+      form {
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+      }
+    </style>
+  </header>
+  </head>
+
+  <body>
+    <h1>Bathtub Race Signup Sheet</h1>
+    <h4>Note: MANDATORY FIELD = <span class="star">*</span></h4>
+    
+      <form
+      method="post"
+      action="https://dev.itas.ca/~brandon.brown/processForm.php">
+    
+<p>
+      <div class="wrapper">
+        <label><span class="star">*</span>Select Event:</label>
+        <ul>
+          <li>
+            <input type="radio" name="event" value="stock" required /> Stock
+          </li>
+          <li><input type="radio" name="event" value="modified" /> Modified</li>
+        </ul>
+      </div>
+      <div>
+        <div>
+          <label for="lname"><span class="star">*</span>Last Name:</label>
+          <input type="text" id="lname" name="lastName" required />
+        </div>
+        <div>
+          <label for="fname"><span class="star">*</span>First Name:</label>
+          <input type="text" id="fname" name="firstName" required />
+        </div>
+        <div>
+          <label for="address"><span class="star">*</span>Address:</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+        <div>
+          <label for="city"><span class="star">*</span>City:</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+        <div>
+          <label><span class="star">*</span>Province:</label>
+          <select>
+            <option>AB</option>
+            <option>BC</option>
+            <option>MB</option>
+            <option>NB</option>
+            <option>NL</option>
+            <option>NT</option>
+            <option>NS</option>
+            <option>NU</option>
+            <option>PE</option>
+            <option>ON</option>
+            <option>QC</option>
+            <option>SK</option>
+            <option>YT</option>
+          </select>
+        </div>
+        <div>
+          <label for="postalCode"
+            ><span class="star">*</span>Postal Code/Zip Code:</label
+          >
+          <input type="text" id="postalCode" name="postCode" required />
+        </div>
+        <div>
+          <label for="country"><span class="star">*</span>Country:</label>
+          <input type="text" id="country" name="country" required />
+        </div>
+        <div>
+          <label for="email"><span class="star">*</span>Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="myDate"><span class="star">*</span>Birthdate:</label>
+          <input type="date" name="birthdate" id="myDate" required />
+        </div>
+        <div class="pronouns">
+          <div>
+            <label><span class="star">*</span>Preferred pronouns:</label>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  id="sheHers"
+                  name="pronouns"
+                  value="sheHers"
+                  required
+                />
+                She/Hers
+              </li>
+
+              <li>
+                <input
+                  type="radio"
+                  id="himHis"
+                  name="pronouns"
+                  value="himHis"
+                />
+                Him/His
+              </li>
+
+              <li>
+                <input
+                  type="radio"
+                  id="theyTheirs"
+                  name="pronouns"
+                  value="theyTheirs"
+                />
+                They/Theirs
+              </li>
+
+              
+            </ul>
+          </div>
+        </div>
+        <div>
+          <label for="boatName"><span class="star">*</span>Boat Name:</label>
+          <input type="text" id="boatName" name="boatName" required />
+        </div>
+        <div>
+          <label>Comments:</label>
+          <textarea rows="3" , cols="40"> </textarea>
+        </div>
+        <div>
+          <label for="waiver"
+            ><span class="star">*</span>I agree to the waiver</label
+          >
+          <input type="checkbox" id="waiver" name="waiver" required />
+        </div>
+        <button type="submit">Submit</button>
+      </div>
+      </p>
+    </form>
+  </body>
+</html>
